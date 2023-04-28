@@ -12,6 +12,9 @@ spec:
   source:
     path: apps/argocd
     repoURL: 'https://github.com/SylvainEcuer/univ-argocd.git'
+    helm:
+      valueFiles:
+      - values.yaml
     targetRevision: HEAD
   destination:
     name: in-cluster
