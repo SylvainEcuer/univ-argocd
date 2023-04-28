@@ -5,4 +5,7 @@ argo-cd:
       ingressClassName: nginx
       hosts:
       - "unnomprofesionnel.playground.padok.cloud"
-
+      tls:
+      - hosts:
+        - "unnomprofesionnel.playground.padok.cloud"
+        secretName: unnomprofesionnel-playground-padok-cloud-tls
