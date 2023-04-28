@@ -1,11 +1,15 @@
 argo-cd:
+  configs:
+    params:
+      server.insecure: true
   server:
     ingress:
       enabled: true
       ingressClassName: nginx
       hosts:
       - "unnomprofesionnel.playground.padok.cloud"
-      tls:
-      - hosts:
-        - "unnomprofesionnel.playground.padok.cloud"
-        secretName: unnomprofesionnel-playground-padok-cloud-tls
+      annotations:
+        nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+        nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+
+    
