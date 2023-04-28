@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: "le bédoin"
+  name: traefik
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   labels:
-    app: "le bédoin"
+    app: traefik
 spec:
   project: infrastructure
   source:
