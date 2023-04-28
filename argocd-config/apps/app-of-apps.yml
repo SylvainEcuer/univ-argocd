@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: argocd-config
-    repoURL: 'git@github.com:SylvainEcuer/univ-argocd.git'
+    repoURL: 'https://github.com/SylvainEcuer/univ-argocd.git'
     targetRevision: HEAD
   destination:
     name: in-cluster
