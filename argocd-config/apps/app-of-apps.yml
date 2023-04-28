@@ -10,9 +10,11 @@ metadata:
 spec:
   project: default
   source:
-    path: argocd-config
+    path: argocd-config/
     repoURL: 'https://github.com/SylvainEcuer/univ-argocd.git'
     targetRevision: HEAD
+    directory:
+      recurse: true
   destination:
     name: in-cluster
     namespace: argocd
