@@ -1,6 +1,8 @@
-server:
-  ingress:
-    enabled: true
-    ingressClassName: nginx
-    hosts:
-     - unnomprofesionnel.playground.padok.cloud
+argo-cd:
+  server:
+    ingress:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+      - "unnomprofesionnel.playground.padok.cloud"
+
