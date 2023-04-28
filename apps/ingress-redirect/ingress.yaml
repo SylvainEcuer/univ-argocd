@@ -16,4 +16,4 @@ spec:
           service:
             name: traefik
             port: 
-              name: http
+              number: 80
